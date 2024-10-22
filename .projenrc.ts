@@ -6,7 +6,7 @@ const project = new cdk.JsiiProject({
   authorAddress: ' 12092354+daraghmartin@users.noreply.github.com',
   defaultReleaseBranch: 'main',
   jsiiVersion: '~5.4.0',
-  name: '@fluxineer/custom-cdk-projen',
+  name: '@fluxineer/custom-cdk-projen-project',
   projenrcTs: true,
   repositoryUrl: 'https://github.com/fluxineer/projen-cdk',
   devDeps: ['eslint-plugin-prettier', 'eslint-config-prettier'],

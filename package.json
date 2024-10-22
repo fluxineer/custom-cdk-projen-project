@@ -1,5 +1,5 @@
 {
-  "name": "@fluxineer/custom-cdk-projen",
+  "name": "@fluxineer/custom-cdk-projen-project",
   "repository": {
     "type": "git",
     "url": "https://github.com/fluxineer/projen-cdk"
