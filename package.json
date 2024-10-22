@@ -1,8 +1,8 @@
 {
-  "name": "os",
+  "name": "@fluxineer/custom-cdk-projen",
   "repository": {
     "type": "git",
-    "url": "https://github.com/158112862+ja-daragh/os.git"
+    "url": "https://github.com/fluxineer/projen-cdk"
   },
   "scripts": {
     "build": "npx projen build",
@@ -29,39 +29,54 @@
     "projen": "npx projen"
   },
   "author": {
-    "name": "ja-daragh",
-    "email": "158112862+ja-daragh@users.noreply.github.com",
+    "name": "daraghmartin",
+    "email": " 12092354+daraghmartin@users.noreply.github.com",
     "organization": false
   },
   "devDependencies": {
     "@types/jest": "^29.5.13",
     "@types/node": "^18",
-    "@typescript-eslint/eslint-plugin": "^6",
-    "@typescript-eslint/parser": "^6",
+    "@typescript-eslint/eslint-plugin": "^7",
+    "@typescript-eslint/parser": "^7",
+    "commit-and-tag-version": "^12",
     "constructs": "^10.0.0",
     "eslint": "^8",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-typescript": "^3.6.3",
     "eslint-plugin-import": "^2.30.0",
+    "eslint-plugin-prettier": "^5.2.1",
     "jest": "^29.7.0",
     "jest-junit": "^15",
     "jsii": "~5.4.0",
     "jsii-diff": "^1.103.1",
-    "jsii-docgen": "^10.5.5",
+    "jsii-docgen": "^10.5.0",
     "jsii-pacmak": "^1.103.1",
     "jsii-rosetta": "~5.4.0",
     "projen": "^0.88.0",
-    "standard-version": "^9",
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.2"
   },
+  "peerDependencies": {
+    "constructs": "^10.3.0",
+    "projen": "^0.88.0"
+  },
+  "keywords": [
+    "aws",
+    "cdk",
+    "projen",
+    "typescript"
+  ],
   "main": "lib/index.js",
   "license": "Apache-2.0",
   "version": "0.0.0",
   "jest": {
+    "coverageProvider": "v8",
     "testMatch": [
-      "<rootDir>/src/**/__tests__/**/*.ts?(x)",
-      "<rootDir>/@(test|src)/**/*(*.)@(spec|test).ts?(x)"
+      "<rootDir>/@(src|test)/**/*(*.)@(spec|test).ts?(x)",
+      "<rootDir>/@(src|test)/**/__tests__/**/*.ts?(x)",
+      "<rootDir>/@(projenrc)/**/*(*.)@(spec|test).ts?(x)",
+      "<rootDir>/@(projenrc)/**/__tests__/**/*.ts?(x)"
     ],
     "clearMocks": true,
     "collectCoverage": true,
